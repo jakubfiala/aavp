@@ -1,0 +1,23 @@
+body {
+	font-family: 'Inconsolata' ;
+}
+
+menuitem {
+	display: block;
+	color: black;
+	cursor: pointer;
+}
+
+menuitem:hover {
+	color: green;
+}
+
+article {
+	width: 400px;
+	font-size: 14px;
+	padding: 40px 0px 40px 0px;
+}
+
+ul {
+	list-style-type: cjk-ideographic;
+}
