@@ -2,20 +2,27 @@ body {
 	font-family: 'Inconsolata' ;
 }
 
-menuitem {
+a {
 	display: block;
 	color: black;
 	cursor: pointer;
+	text-decoration: none;
 }
 
-menuitem:hover {
+a:hover {
 	color: green;
+}
+
+#top {
+	width: 100%;
+	background-color: white;
+	position: fixed;
 }
 
 article {
 	width: 400px;
 	font-size: 14px;
-	padding: 40px 0px 40px 0px;
+	padding: 500px 0px 40px 0px;
 }
 
 ul {
