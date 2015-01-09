@@ -19,7 +19,7 @@
 	</menu>
 	</div>
 	<article id="rippleContent">
-
+		<iframe width="420" height="315" src="//www.youtube.com/embed/NDM5F_VJk-U?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 		<i>ripple</i> is a simple, yet powerful interface for live MIDI sequencing, written in C++/openframeworks.
 		Inspired by instruments such as the tenori-on, it consists of a grid of buttons that correspond
 		to individual MIDI pitch values. The user first creates a sequence by selecting a button, and then
@@ -27,13 +27,32 @@
 		Whenever the wave encounters a toggled button, a note is triggered polyphonically. The app can be used
 		as live MIDI input into synths in any kind of DAW &mdash; however, it is necessary to create a virtual MIDI routing, e.g. with
 		midi-patchbay.
-		<br>
+		<br><br>
+		There are four additional options:
+		<ul>
+			<li>tempo control to change the BPM</li>
+			<li>a MIDI toggle to switch between in-app sound and MIDI output</li>
+			<li>toggle to change the mapping of the grid to MIDI notes</li>
+			<li>toggle to switch between square and line wave types</li>
+		</ul>
+		<i>Notes on implementation</i><br>
+		The app was developed with a particular approach to live performance in mind – one where the musician
+		explores the given set of triggers, whose musical mapping isn't immediately obvious. In order to encourage
+		such an approach, I have designed the grid in unconventional dimensions, i.e. not according to the twelve-tone
+		divisions of pitches.<br>
+		Although by default, in-app sound is enabled, the app is primarily useful with external MIDI instruments.
+		I have included the simple native Maximilian synth merely because a user might want to test their chosen sequence
+		before engaging with the external synth.<br>
+		Further development on this app might include: support for external MIDI clock, more types of waves/mappings,
+		custom ADSR option, etc.
+
+		<br><br>
 		<a href="src/ripple_src.zip">Download source</a><br>
 		<a href="http://github.com/jakubfiala/ripple">github repo</a>
 
 	</article>
 	<article id="maxiBarkContent">
-
+		<iframe width="420" height="315" src="//www.youtube.com/embed/nYbWQ1WOOnQ?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 		<i>maxiBark</i> is an implementation of Bark scale spectral analysis in Maximilian, a C++ DSP library by Mick Grierson/Chris Kiefer.
 		It works with the ofxMaxim plugin for openframeworks. It has three methods for obtaining loudness based on this perceptual scale:
 		<ul>
@@ -41,14 +60,14 @@
 			<li><i>relativeLoudness</i> &ndash; loudness of each Bark band, relative to the loudest band</li>
 			<li><i>totalLoudness</i> &ndash; absolute loudness of all bands, summed</li>
 		</ul>
-		<br>
-		<a href="src/maxiBark_h_src.zip">Download source</a><br>
+		<br><br>
+		<a href="src/maxiBark_src.zip">Download source</a><br>
 		<a href="http://github.com/micknoise/maximilian">Maximilian on github – maxiBark already included!</a>
 
 
 	</article>
 	<article id="basstomidContent">
-
+		<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/185263472%3Fsecret_token%3Ds-UHuxu&amp;color=00cc11&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
 		<i>basstomid</i> is an extremely simple VST plugin that achieves a rudimental, yet essential effect
 		on audio mixes: it accepts a stereo signal, which it converts to mono below the specified frequency.
 		This is important for example for vinyl mastering, where heavily panned low-frequency content can cause
@@ -58,18 +77,19 @@
 
 	</article>
 	<article id="theenemiismiContent">
-
+		<iframe width="420" height="315" src="//www.youtube.com/embed/ZrlPEOuTezc?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 		<i>theenemiismi</i> is an experimental computer vision game implemented in openframeworks, where the user is attacked
 		by a host of enemies in the form of their own face expressions. They can then defeat the opponents by catching
-		them with their mouth.
-		<br>
+		them with their face.
+		<br><br>
 		<a href="src/theenemiismi_src.zip">Download source</a><br>
 
 	</article>
 	<article id="unknownPleasurifierContent">
+		<iframe width="420" height="315" src="//www.youtube.com/embed/0Yv9ETROPXs?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 		<i>unknownPleasurifier</i> is a simple openframeworks app that transforms sound input into a graphic reminiscent
 		of the album cover for Unknown Pleasures by Joy Division. Press any key to save the current image into bin/data of the app.
-		<br>
+		<br><br>
 		<a href="src/UnknownPleasurifier_src.zip">Download source</a><br>
 	</article>
 </body>
